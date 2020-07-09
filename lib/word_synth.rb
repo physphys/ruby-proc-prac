@@ -8,7 +8,7 @@ class WordSynth
   end
 
   def play(words)
-    @effects.inject(words).do |word, effect|
+    @effects.inject(words) do |word, effect|
       effect.call(word)
     end
   end
